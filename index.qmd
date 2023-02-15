@@ -1,0 +1,19 @@
+---
+title: "first-repo-quarto"
+format: 
+  html: 
+    self-contained: true
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+
+glimpse(storms)
+
+storms%>%
+  ggplot()+
+  geom_point(mapping = aes(x = pressure, y = year))
+
+```
+
